@@ -1,0 +1,7 @@
+.dynamic-css-div {
+    width: 600px;
+}
+
+.dynamic-css-div.invalid {
+    background-color: red;
+}
