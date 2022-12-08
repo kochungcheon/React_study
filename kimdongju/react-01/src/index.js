@@ -22,6 +22,7 @@ import reportWebVitals from './reportWebVitals';
 // 이를 root 상수나 변수로 저장한다.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+
 // React에서는 자바스크립트 내에서 html 코드가 작성되는데, 이 코드들이 브라우저로 전송될 때 html 코드로 변환되기 때문에 정상 동작하는 것이다.
 // 이렇게 함으로써 html과 자바스크립트간의 경계가 흐려져 자바스크립트를 더 잘 활용할 수 있기 때문이라고 볼 수 있다.
 // root 객체에 render 메서드를 호출하여 실질적으로 사용자 인터페이스에 해당하는 App.js이라는 컴포넌트를 렌더링 한다.

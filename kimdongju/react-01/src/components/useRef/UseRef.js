@@ -8,6 +8,7 @@ const UseRef = (props) => {
   
   function clickAlertHandler() {
     // ref에 담긴 값 확인
+    // ref는 value 뿐만 아니라 내장 HTML 요소가 가지는 속성 모두에 접근이 가능하다. (예: focus 등등...)
     alert(userInputRef.current.value)
     
     // ref에 담긴 값 초기화, input 요소의 value도 함께 초기화된다.
