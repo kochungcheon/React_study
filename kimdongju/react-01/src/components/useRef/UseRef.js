@@ -16,6 +16,10 @@ const UseRef = (props) => {
     // ref는 native DOM에서 조작되므로 '제어되지 않는 컴포넌트'라고 불리운다. React 단에서 조작되지 않기 때문이다.
     // 반대로 state가 사용되는 컴포넌트는 '제어되는 컴포넌트'라고 불리우는데, 이는 React 단에서 조작되는 state를 가지기 때문이다.
     userInputRef.current.value = ''
+
+    // 아래와 같이 메서드로 존재하는 기능은 ref를 사용할 수 없다.
+    // 이러한 기능들을 사용하기 위해서는 useImperativeHandle 훅을 사용할 것.
+    userInputRef.current.activate()
   }
 
   return (

@@ -8,8 +8,10 @@ import UseRef from './components/useRef/UseRef';
 import UseEffect from './components/useEffect/UseEffect';
 import UseReducerBasic from './components/useReducer/UseReducerBasic';
 import UseReducerAdvanced from './components/useReducer/UseReducerAdvanced';
+import UseImperativeHandle from './components/useImperativeHandle/UseImperativeHandle';
 import OnEventBasic from './components/onEvent/OnEventBasic';
 import DynamicAttribute from './components/DynamicAttribute/DynamicAttribute';
+import GetImage from './components/GetImage/GetImage';
 import RecyclingComponent from './components/RecyclingComponent/RecyclingComponent';
 import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering';
 import ScopedCSS from './components/ScopedCSS/ScopedCSS';
@@ -57,11 +59,17 @@ function App() {
       <p>7. useReducer - useState보다 더 기능이 많지만 더 복잡한 State를 관리하는 훅 : 고급</p>
       <UseReducerAdvanced />
       <hr></hr>
+      <p>7. useImperativeHandle - 함수 컴포넌트가 ref를 받아 사용할 수 있게 하는 훅 (ex: input ref의 activate() 등등...)</p>
+      <UseImperativeHandle />
+      <hr></hr>
       <p>8. onEvent - 사용자의 요소에 대한 반응과 함수를 연결</p>
       <OnEventBasic />
       <hr></hr>
       <p>9. DynamicAttribute - 클래스 이름, ID, CSS 등을 동적으로 설정 </p>
       <DynamicAttribute />
+      <hr></hr>
+      <p>9. GetImage - 이미지 파일을 React 애플리케이션으로 가져와 동적 URL 형성 </p>
+      <GetImage />
       <hr></hr>
       <p>10. RecyclingComponent - 컴포넌트 하나에 각각의 데이터를 담아 배열의 인덱스만큼 반복하여 사용 </p>
       <RecyclingComponent />
